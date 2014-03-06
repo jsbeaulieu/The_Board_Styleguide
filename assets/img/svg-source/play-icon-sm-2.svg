@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="25px" height="25px">
+<circle class="coul" cx="12.5" cy="12.5" r="12.5" />
+<circle fill="#FFFFFF" cx="12.5" cy="12.5" r="11"/>
+<circle class="coul" cx="12.5" cy="12.5" r="9.5" />
+<polygon fill="#FFFFFF" points="8,17 19,12.5 8,8 "/>
+</svg>

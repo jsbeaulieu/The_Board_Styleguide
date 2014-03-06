@@ -1,0 +1,205 @@
+{% block styles %}
+{{ "board-ui-buttons.css" | asset_url | stylesheet_tag }}
+{% endblock %}
+
+{% block content %} 
+
+<h1>Boutons</h1>
+<p class="files">style sheet : <a href="assets/css/board-ui-buttons.css">board-ui-button.css</a> </p>
+
+<h3>default text button</h3>
+
+<p>
+<code class="snipet">
+&lt;a href=&quot;_URL_&quot; class=&quot;bouton&quot;&gt;link button&lt;/a&gt; <br>
+&lt;button class=&quot;bouton&quot;&gt;bouton&lt;/button&gt;
+</code>
+</p>
+
+<table class="sg-table">
+<tr>
+<th>bouton</th>
+<th>class</th>
+<th>description</th>
+</tr>
+
+<tr>
+<td><a href="#" class="bouton">default</a></td>
+<td><code>bouton</code></td>
+<td>Bouton d'action pas default </td>
+</tr>
+<tr>
+<td><a href="#" class="bouton bouton-bleu">bleu</a></td>
+<td><code>bouton bouton-bleu</code></td>
+<td>Bouton pour fonctionalite</td>
+</tr>
+<tr>
+<td><a href="#" class="bouton bouton-rouge">rouge</a></td>
+<td><code>bouton bouton-rouge</code></td>
+<td>action potentiellement dangereuse  (&agrave; d&eacute;finir)</td>
+</tr>
+<tr>
+<td><a href="#" class="bouton bouton-plain">plain</a></td>
+<td><code>bouton bouton-plain</code></td>
+<td>bouton g&eacute;n&eacute;rique</td>
+</tr>
+<tr>
+<td><a href="#" class="bouton bouton-deact">deactivated</a></td>
+<td><code>bouton bouton-deact</code></td>
+<td>Bouton desactive</td>
+</tr>
+<tr>
+<td><a href="#" class="bouton bouton-clear">Rien</a></td>
+<td><code>bouton bouton-clear</code></td>
+<td>Bouton text  </td>
+</tr>
+<!-- <tr>
+<td><a href="#" class="bouton bouton-txt">Texte</a></td>
+<td><code>bouton bouton-txt</code></td>
+<td>_dev: Bouton text  </td>
+</tr> -->
+
+<tr>
+<td><a href="#" class="bouton bouton-txt-cancel">Cancel</a></td>
+<td><code>bouton bouton-txt-cancel</code></td>
+<td>_dev: Bouton text : cancel  </td>
+</tr>
+
+</table>
+
+<h3>Taille de bouton</h3>
+
+<table class="sg-table">
+	<tr>
+<th>bouton</th>
+<th>class</th>
+<th>description</th>
+</tr>
+<tr>
+<td><a href="#" class="bouton">Default</a></td>
+<td><code>bouton</code></td>
+<td>Taille par default</td>
+</tr>
+<tr>
+<td><a href="#" class="bouton bouton-med">medium</a></td>
+<td><code>bouton bouton-med</code></td>
+<td>Bouton plus gro</td>
+</tr>
+
+</table>
+<h3>bouton texte + icon</h3>
+
+<table class="sg-table">
+<tr>
+<th>bouton</th>
+<th>class</th>
+<th>description</th>
+</tr>
+
+<tr>
+<td><a href="#" class="bouton bouton-ico-play">play</a></td>
+<td><code>bouton bouton-ico-play</code></td>
+<td>Bouton avec icone</td>
+</tr>
+<tr>
+<td><a href="#" class="bouton bouton-plain bouton-ico-play">play</a></td>
+<td><code>bouton bouton-plain bouton-ico-play</code></td>
+<td>Bouton avec icone</td>
+</tr>
+
+<tr class="_bad">
+<td><a href="#" class="bouton"><i class="bouton-ico-play"></i>play</a></td>
+<td><code>bouton &lt;i class="ico-play"&gt; &lt;/i&gt;</code></td>
+<td>__ dev</td>
+</tr>
+
+</table>
+
+<h3>bouton navigation</h3>
+
+<table class="sg-table">
+<tr>
+<th>bouton</th>
+<th>class</th>
+<th>description</th>
+</tr>
+
+<tr>
+<td><a href="#" class="bouton bouton-ico-prev bouton-clear">previous</a></td>
+<td><code>bouton bouton-ico-prev bouton-clear</code></td>
+<td>Bouton navigation "precedent"</td>
+</tr>
+<tr>
+<td><a href="#" class="bouton bouton-ico-next bouton-clear">next</a></td>
+<td><code>bouton bouton-ico-next bouton-clear</code></td>
+<td>Bouton navigation  "suivant"</td>
+</tr>
+
+</table>
+
+<h3>Usage</h3>
+<p>example de combinaison</p>
+<table class="sg-table">
+<tr>
+<th>bouton</th>
+<th>class</th>
+<th>description</th>
+</tr>
+<tr>
+<td><a href="#" class="bouton bouton-bleu bouton-med">Louer<br>ce<br>film</a></td>
+<td><code>bouton bouton-bleu bouton-med</code></td>
+<td>Example de combinaison</td>
+</tr>
+</table>
+<h3>bouton carre</h3>
+
+<p>
+<code class="snipet">
+&lt;a class=&quot;bouton bouton-square twitter-btn&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;/a&gt;
+</code>
+</p>
+<table class="sg-table">
+	<tr>
+		<th>bouton</th>
+		<th>class</th>
+		<th>description</th>
+	</tr>
+	<tr>
+		<td><a class="bouton bouton-square twitter-btn"><i></i></a></td>
+		<td><code>bouton bouton-square twitter-btn</code></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><a class="bouton bouton-square facebook-btn"><i></i></a></td>
+		<td><code>bouton bouton-square facebook-btn</code></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><a class="bouton bouton-square gplus-btn"><i></i></a></td>
+		<td><code>bouton bouton-square gplus-btn</code></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><a class="bouton bouton-square youtube-btn"><i></i></a></td>
+		<td><code>bouton bouton-square youtube-btn</code></td>
+		<td></td>
+	</tr>
+</table>
+
+
+
+<h4>monocrome</h4>
+<table class="sg-table">
+	<tr>
+		<th>bouton</th>
+		<th>class</th>
+		<th>description</th>
+	</tr>
+	<tr>
+		<td><a class="bouton bouton-square mono twitter-btn"><i></i></a></td>
+		<td><code>bouton bouton-square twitter-btn mono</code></td>
+		<td></td>
+	</tr>
+</table>
+
+{% endblock %}

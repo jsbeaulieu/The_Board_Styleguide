@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Title block allowing child pages to override -->
+        <title>{% block title %}The Board{% endblock %}</title>
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <!-- Styles -->
+            {{ "board-setup.css" | asset_url | stylesheet_tag }}      
+            {{ "board-style.css" | asset_url | stylesheet_tag }}
+            {{ "board-ui-grid.css" | asset_url | stylesheet_tag }}
+            {{ "board-ui-side-menu.css" | asset_url | stylesheet_tag }}
+            {{ "styleguide.css" | asset_url | stylesheet_tag }}
+        <!-- Style block allowing child pages to inject their own styles -->
+        {% block styles %}{% endblock %}
+    </head>
+    <body>
+        <div id="wrapper" class="thepage" style="max-width:960px">
+            <!-- Include -->
+            {% include "header" %}
+            <div class="row">
+                <div class="span-l3-m3-s3-xs3">{% include "sidemenu" %}</div>
+                <div class="span-l9-m9-s9-xs9">
+            <!-- Content block, child page inject content -->
+            {% block content %}{% endblock %}
+            </div>
+        </div>
+        </div>
+        <!-- Script block allowing child pages to inject their own scripts -->
+        {% block scripts %}{% endblock %}
+        {{ "app.js" | asset_url | script_tag }}
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js></script>
+    </body>
+</html>

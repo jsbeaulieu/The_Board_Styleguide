@@ -1,0 +1,1 @@
+.tabs li{display:inline-block;margin-right:20px;border:3px double #433d38;border-width:3px 0 0 0}.tabs li a{display:block;padding:10px 0}.tabs li.active{border-color:#dfdac0;border-style:solid;border-width:3px 0 0 0}.tabs li.active a{color:#fff;font-weight:bold}

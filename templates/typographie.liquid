@@ -1,0 +1,57 @@
+{% block styles %}        
+	{{ "board-style.css" | asset_url | stylesheet_tag }}
+{% endblock %}
+{% block content %} 
+
+<h1>Typographie</h1>
+<code class="snipet">
+&lt;div class=&quot;copy&quot;&gt; [...] &lt;/div&gt;
+</code>
+<div class="typog copy demo">
+	<h1>H1 header</h1>
+
+<!-- TODO:  Italic sur les blocks .copy-->
+
+	<p>Paragraphe lorem ipsum <a href="#">un lien</a>  dolor sit amet, <em>italique avec em</em>  elit. <strong>Bold avec strong</strong> ultrices <i>italique avec i</i> hendrerit lacus a pretium. Vivamus <b>Bold avec b</b> sit amet odio ipsum. Duis at lectus elit, sagittis sodales sem. Aenean convallis euismod bibendum. Etiam a nisi tincidunt lacus commodo aliquam in eu mauris. Integer semper, dolor non mattis ornare, dui tortor pulvinar purus, id scelerisque nunc sem hendrerit leo. Aenean vel fringilla velit. Phasellus a ligula nec odio varius volutpat.</p>
+	<blockquote>Blockquote lorem ipsum dolor sit amet, consectetur adipiscing elit. </blockquote>
+
+		<blockquote>
+			<p>Blockquote ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+			<small>Somebody,  <cite title="Source Title">Source</cite></small>
+		</blockquote>
+		<p>Paragraphe lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices hendrerit lacus a pretium. Vivamus sit amet odio ipsum. Duis at lectus elit, sagittis sodales sem. Aenean convallis euismod bibendum. Etiam a nisi tincidunt lacus commodo aliquam in eu mauris.</p>	
+	<h2>H2 header</h2>
+		<p>Paragraphe lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>	
+		<ul>
+			<li>Une liste </li>
+			<li>Integer semper, dolor non mattis 
+				<ul>
+					<li>Liste dans une liste</li>
+					<li>pulvinar purus</li>
+					<li>adipiscing elit</li>
+				</ul>
+			</li>
+			<li>Integer,  mattis ornare</li>
+		</ul>	
+<!-- TODO:  Style pour les listes a completer -->
+		<ol>
+			<li>Une liste ordonne </li>
+			<li>Integer semper, dolor non mattis </li>
+			<li>Integer,  mattis ornare
+				<ol>
+					<li>Liste dans une liste</li>
+					<li>pulvinar purus</li>
+				</ol>
+			</li>
+			<li>Integer,  mattis ornare</li>
+		</ol>	
+		<p>Paragraphe lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices hendrerit lacus a pretium. Vivamus sit amet odio ipsum. Duis at lectus elit, sagittis sodales sem. Aenean convallis euismod bibendum. Etiam a nisi tincidunt lacus commodo aliquam in eu mauris.</p>
+	<h3>H3 header</h3>
+		<p>Paragraphe lInteger semper, dolor non mattis ornare, dui tortor pulvinar purus, id scelerisque nunc sem hendrerit leo. Aenean vel fringilla velit. Phasellus a ligula nec odio varius volutpat.</p>		
+		<p>Paragraphe lInteger semper, dolor non mattis ornare, dui tortor pulvinar purus, id scelerisque nunc sem hendrerit leo. Aenean vel fringilla velit. Phasellus a ligula nec odio varius volutpat.</p>
+	<h4>H4 header</h4>
+		<p>Paragraphe lInteger semper, dolor non mattis ornare, dui tortor pulvinar purus, id scelerisque nunc sem hendrerit leo. Aenean vel fringilla velit. Phasellus a ligula nec odio varius volutpat.</p>	
+	
+		<p>Paragraphe lInteger semper, dolor non mattis ornare, dui tortor pulvinar purus, id scelerisque nunc sem hendrerit leo. Aenean vel fringilla velit. Phasellus a ligula nec odio varius volutpat.</p>	
+</div>
+{% endblock %}

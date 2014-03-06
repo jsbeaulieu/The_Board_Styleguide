@@ -1,0 +1,130 @@
+{% block styles %}        
+    {{ "board-ui-side-menu.css" | asset_url | stylesheet_tag }}
+	{{ "board-ui-pager.css" | asset_url | stylesheet_tag }}
+{% endblock %}
+
+{% block content %} 
+{% assign nav = 'navig' %}
+<h1>Navigation</h1>
+
+<h3>Side menu</h3>
+<p class="files">style sheet : <a href="http://media3.nfb.ca/medias/nfb_tube_static/styles/c/board-ui-side-menu.css">board-ui-side-menu.css</a> </p>
+
+<code class="snipet">
+<pre>
+&lt;ul class=&quot;sidemenu&quot;&gt;
+    &lt;li class=&quot;open&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;
+        &lt;ul&gt;
+            &lt;li class=&quot;on&quot;&gt;&lt;a href=&quot;#/&quot;&gt;Sous-item 1.1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sous-item 1.2&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;xtern&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 3 (External link)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+</code>
+<!-- TODO:  sous menu du side menu doit etre invisible par default (voir education.css) -->
+
+<div class="demo">
+<ul class="sidemenu">
+    <li><a href="#">Item 1</a>
+        <ul class="_bad">
+            <li><a href="#">Sous-item</a></li>
+            <li><a href="#">Sous-item</a></li>
+        </ul>
+    </li>
+    <li class="open"><a href="#">Item 2</a>
+        <ul>
+            <li class="on"><a href="#/">Sous-item</a></li>
+            <li><a href="#">Sous-item</a></li>
+            <li><a href="#">Sous-item</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Item 3</a></li>
+    <li class="xtern"><a href="#">Item 4 (External link)</a></li>
+    <li><a href="#">Item 6</a></li>
+</ul>
+</div>
+
+<h3>Breadcrumb</h3>
+
+<code class="snipet">
+<pre>
+&lt;div class=&quot;crumbs&quot;&gt;&lt;a href=&quot;#&quot;&gt;Level one&lt;/a&gt; &gt; &lt;a href=&quot;#&quot;&gt;level two&lt;/a&gt;&lt;/div&gt;
+</pre>
+</code>
+<br>
+<div class="demo">
+<div class="crumbs"><a href="#">Level one</a> > <a href="#">level two</a></div>
+</div>
+
+<h3>Top Menu</h3>
+<code class="snipet">
+<pre>
+&lt;ul class=&quot;topmenu&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;on&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+</code>
+<br>
+<div class="demo">
+<ul class="topmenu">
+    <li><a href="#">Item 1</a></li>
+    <li class="on"><a href="#">Item 2</a></li>
+    <li><a href="#">Item 3</a></li>
+    <li class=""><a href="#">Item 4</a></li>
+    <li><a href="#">Item 6</a></li>
+</ul>
+</div>
+
+<h3>Pagination</h3>
+<p class="files">style sheet : <a href="assets/css/board-ui-pager.css">board-ui-pager.css</a> </p>
+<p>On peut utiliser remplacer le &lt;a&gt; pour &lt;span&gt; pour les etats .on et .off</p>
+<code class="snipet">
+<pre>
+&lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;off&quot;&gt;&lt;a href=&quot;#&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;on&quot;&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+</code>
+<br>
+<div class="demo">
+    <ul class="pagination">
+        <li class="off"><a href="#">&laquo;</a></li>
+        <li class="on"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+</div>
+<h4>Simple pager</h4>
+<code class="snipet">
+<pre>
+&lt;ul class=&quot;pagination pager&quot;&gt;
+    &lt;li class=&quot;off&quot;&gt;&lt;a href=&quot;#&quot;&gt;&amp;laquo; prev&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;next &amp;raquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+</code>
+<br>
+<div class="demo">
+    <ul class="pagination pager">
+        <li class="off"><a href="#">&laquo; prev</a></li>
+        <li><a href="#">next &raquo;</a></li>
+    </ul>
+</div>
+
+{% endblock %}

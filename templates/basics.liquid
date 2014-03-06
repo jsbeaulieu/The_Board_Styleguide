@@ -1,0 +1,74 @@
+{% block styles %}        
+
+{% endblock %}
+{% block content %} 
+<h1>Basics</h1>
+<dl class="files"><dt>style sheet :</dt> 
+	<dd><a href="assets/css/board-setup.css">board-setup.css</a> </dd>
+	<dd> <a href="assets/css/board-style.css">board-style.css</a></dd>
+</dl>
+
+<h2>Media queries</h2>
+
+<p>We try to follow the "<b>Mobile first</b>" philosophy</p>
+<p>NFB.ca has a 4 steps layout</p>
+
+<code class="snipet">
+<pre>
+/* MOBILE FIRST */
+
+/* TABLETTE */
+@media (min-width: 704px){ }
+
+/*ORDI*/
+@media (min-width: 1100px){}
+
+/*TV*/
+@media (min-width: 1756px){}
+</pre>
+</code>
+
+<table class="sg-table">
+<tr>
+<th>break point</th>
+<th>media query</th>
+<th>description</th>
+</tr>
+
+<tr>
+<td>par default</td>
+<td><code> &nbsp; </code></td>
+<td>Mobile first svp. telephone a petite tablette</td>
+</tr>
+<tr>
+<td>704px</td>
+<td><code>@media (min-width: 704px){ }</code></td>
+<td>Pour les tablettes. Principalement le iPad</td>
+</tr>
+<tr>
+<td>1100px</td>
+<td><code>@media (min-width: 1100px){}</code></td>
+<td>Pour les desktops et laptops moyen</td>
+</tr>
+<tr>
+<td>1756px</td>
+<td><code>@media (min-width: 1756px){}</code></td>
+<td>Pour les TVs et les ecrans HD en general</td>
+</tr>
+</table>
+
+<h3>Internet Explorer</h3>
+
+<p>IE 8 doesnt understand media queries so we have to adjust layouts with a specific style sheet. Layout for IE should target a regular size computer screen, the mean that relevent styles in the @media 704px and @media 1100px queries shoud be copied or summarized in that IE specific style sheet.</p>
+
+<code class="snipet">
+<pre>
+&lt;!--[if lt IE 9]&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; href=&quot;http://www.nfb.ca/medias/nfb_tube_static/styles/c/board-ie-fix.css&quot; /&gt;
+&lt;![endif]--&gt;
+</pre>
+</code>
+
+
+
+{% endblock %}

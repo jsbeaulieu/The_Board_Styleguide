@@ -1,0 +1,111 @@
+{% block styles %}        
+	{{ "board-ui-messages.css" | asset_url | stylesheet_tag }}
+
+{% endblock %}
+{% block content %} 
+
+<h1>System messages</h1>
+<p class="files">style sheet : <a href="assets/css/board-ui-messages.css">board-ui-messages.css</a> </p>
+
+
+<table class="sg-table">
+<tr>
+<th>look</th>
+<th>class</th>
+<th>description</th>
+</tr>
+
+<tr>
+<td><div href="#" class="alert help">help</div></td>
+<td><code>help</code></td>
+<td>Aide contextuel</td>
+</tr>
+<tr>
+<td><div href="#" class="alert info">info</div></td>
+<td><code>info</code></td>
+<td>Information</td>
+</tr>
+<tr>
+<td><div href="#" class="alert success">success</div></td>
+<td><code>success</code></td>
+<td>Operation reussi</td>
+</tr>
+<tr>
+<td><div href="#" class="alert warning">warning</div></td>
+<td><code>warning</code></td>
+<td>Attention, danger potentiel</td>
+</tr>
+<tr>
+<td><div href="#" class="alert danger">danger</div></td>
+<td><code>danger</code></td>
+<td>Danger, mort imminente!</td>
+</tr>
+</table>
+
+<h3>alert</h3>
+<code class="snipet">
+<pre>
+&lt;div class=&quot;alert info&quot;&gt;I have a message for you...&lt;/div&gt;
+</pre>
+</code>
+
+<div class="alert info">I have a message for you...</div>
+
+<h4>multi-line alert (?)</h4>
+<code class="snipet">
+<pre>
+&lt;div class=&quot;alert warning&quot;&gt;
+	&lt;p&gt;I have a longer message for you...&lt;/p&gt;
+	&lt;p&gt;But not too long please.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+</code>
+
+<div class="alert warning"><p>I have a longer message for you...</p><p>But not too long please.</p></div>
+
+<h3>alert dismissable</h3>
+<code class="snipet">
+<pre>
+&lt;div class=&quot;alert alert-dismiss success&quot;&gt;You are doing great! &lt;a href=&quot;#&quot; class=&quot;bouton bouton-sm bouton-plain bouton-kill-window&quot;&gt;x&lt;/a&gt;&lt;/div&gt;
+</pre>
+</code>
+<br>
+<div class="alert success">You are doing great!<a href="#" class="bouton-kill-window">&times;</a></div>
+
+<h3>Panel</h3>
+<code class="snipet">
+<pre>
+&lt;div class=&quot;panel&quot;&gt;
+	&lt;h1 class=&quot;panel-title&quot;&gt;Default panel&lt;/h1&gt;
+	&lt;div class=&quot;panel-body&quot;&gt;
+		&lt;p&gt;I have a longer message for you...&lt;/p&gt;
+		&lt;p&gt;But not too long please.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</code>
+<div class="panel">
+	<h1 class="panel-title">Default panel</h1>
+	<div class="panel-body">
+		<p>I have a longer message for you...</p>
+		<p>But not too long please.</p>
+	</div>
+</div>
+
+<code class="snipet">
+<pre>
+&lt;div class=&quot;panel help&quot;&gt;
+	[...]
+&lt;/div&gt;
+</pre>
+</code>
+
+<div class="panel help">
+	<h1 class="panel-title">Color coded panel</h1>
+	<div class="panel-body">
+		<p>I have a longer message for you...</p>
+		<p>But not too long please.</p>
+	</div>
+</div>
+
+{% endblock %}

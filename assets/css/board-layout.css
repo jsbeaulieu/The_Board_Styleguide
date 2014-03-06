@@ -1,0 +1,46 @@
+/* ( o ) ---------- */
+/*  | |  CSS Styles */
+/*----------------- */
+/* bin layout  */
+.thepage{position: relative;}
+.bin{padding:0 20px;}
+.brand-bin{}
+.section-title-bin{}
+.content-bin{}
+.extra-bin{}
+.menu-bin{}
+.side-bin{}
+.crumbs-bin
+.topmenu-bin{}
+.prefooter-bin{}
+
+@media (min-width: 44em){
+    .bin{}
+    .bin-group{padding-right:20px;}
+    .brand-bin, .menu-bin, .side-bin, .content-bin, .extra-bin, .crumbs-bin {}
+    .section-title-bin, .brand-bin, .menu-bin, .side-bin{width:206px}
+    .content-bin, .extra-bin, .crumbs-bin, .topmenu-bin, .feature-bins {margin-left: 246px}
+    .extra-bin, .content-bin {max-width:664px;}
+    .crumbs-bin, .topmenu-bin {max-width:704px;}
+
+    .content-bin, .brand-bin, .feature-bins, .section-title-bin, .extra-bin {margin-top:20px}
+        .content-bin{min-height: 540px}
+    .feature-bins {margin-right: 20px}
+    .brand-bin, .section-title-bin{float:left}
+    .menu-bin, .side-bin{position: absolute;top:105px; left:0;bottom:0;overflow:auto;}
+    .crumbs-bin, .topmenu-bin{padding:0 0;}
+    .bin-loose{max-width: none;}
+}
+
+/*ORDI*/
+@media (min-width: 68.75em) {
+   
+    .content-bin, .extra-bin, .crumbs-bin, .topmenu-bin {}   
+    .extra-bin{position:absolute;width:166px;top:1em;left:714px}
+
+}
+
+/*TV*/
+@media (min-width: 109.75em) {
+
+}

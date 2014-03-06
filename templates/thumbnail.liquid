@@ -1,0 +1,194 @@
+{% block styles %}
+{{ "board-ui-thumbnail.css" | asset_url | stylesheet_tag }}
+{{ "board-ui-buttons.css" | asset_url | stylesheet_tag }}
+{% endblock %}
+
+{% block content %}
+<h1>Film thumbnail</h1>
+<p class="files">style sheet : <a href="assets/css/board-ui-thumbnail.css">board-ui-thumbnail.css</a> <br>(+ board-ui-buttons.html, for actionable thumbnails) </p>
+<h3>Thumbnail de base</h3>
+
+<code class="snipet">
+	<pre>
+&lt;div class=&quot;thumbnail&quot;&gt;
+    &lt;a href=&quot;/film/diner_intime/chaptering/psJTAg/&quot; class=&quot;visual&quot;&gt;
+      &lt;img alt=&quot;Pour la suite du monde&quot; src=&quot;http://www.nfb.ca/medias/nfb_tube/thumbs_small/2013/Pour-la-suite-du-monde_681_SM.jpg&quot;&gt; &lt;span class=&quot;play-overlay&quot;&gt;&amp;nbsp;&lt;/span&gt;
+	    &lt;div class=&quot;format-icons&quot;&gt;     
+	        &lt;img src=&quot;http://media3.onf.ca/medias/nfb_tube_static/styles/imgs/ico_soustitre.gif&quot; alt=&quot;Disponible avec sous-titrage pour malentendants&quot; title=&quot;Disponible avec sous-titrage pour malentendants&quot; width=&quot;17&quot; height=&quot;20&quot;&gt;
+	    &lt;/div&gt;
+      &lt;/a&gt;
+      &lt;div class=&quot;infos&quot;&gt;
+        &lt;h3 class=&quot;title&quot;&gt;
+          &lt;a href=&quot;/film/diner_intime/chaptering/psJTAg/&quot; title=&quot;Catching a fly&quot;&gt;Catching a fly&lt;/a&gt;
+        &lt;/h3&gt;
+      &lt;/div&gt; 
+&lt;/div&gt;
+</pre>
+</code>
+<br>
+<br>
+<div class="clearfix">
+<div class="thumbnail">
+    <a href="/film/diner_intime/chaptering/psJTAg/" class="visual">
+      <img alt="Pour la suite du monde" src="http://www.nfb.ca/medias/nfb_tube/thumbs_small/2013/Pour-la-suite-du-monde_681_SM.jpg"> <span class="play-overlay">&nbsp;</span>
+	    <div class="format-icons">     
+	        <img src="http://media3.onf.ca/medias/nfb_tube_static/styles/imgs/ico_soustitre.gif" alt="Disponible avec sous-titrage pour malentendants" title="Disponible avec sous-titrage pour malentendants" width="17" height="20">
+	    </div>
+    </a>
+	<div class="infos">
+	<h3 class="title chapter-title">
+	  <a href="http://www.onf.ca/film/pour_la_suite_du_monde" title="Pour la suite du monde">Pour la suite du monde</a>
+	</h3>
+	</div> 
+</div>
+
+</div>
+
+<h3>Thumbnail full equiped</h3>
+
+<code class="snipet">
+	<pre>
+&lt;div class=&quot;thumbnail  &quot;&gt;
+    &lt;ul class=&quot;tools&quot;&gt;
+        &lt;li class=&quot;move&quot;&gt;&lt;a class=&quot;bouton bouton-bleu bouton-sm&quot;&gt;&lt;em&gt;Move&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;delete delete-ffp right&quot;&gt;&lt;a class=&quot;bouton bouton-rouge bouton-sm&quot;&gt;&lt;em&gt;Delete&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class=&quot;meta&quot;&gt;
+        &lt;li class=&quot;&quot;&gt;last modify : 8/3/2003&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href=&quot;/film/diner_intime/chaptering/psJTAg/&quot; class=&quot;visual&quot;&gt;
+      &lt;img alt=&quot;Pour la suite du monde&quot; src=&quot;http://www.nfb.ca/medias/nfb_tube/thumbs_small/2013/Pour-la-suite-du-monde_681_SM.jpg&quot;&gt; &lt;span class=&quot;play-overlay&quot;&gt;&amp;nbsp;&lt;/span&gt;
+	    &lt;div class=&quot;format-icons&quot;&gt;     
+	        &lt;img src=&quot;http://media3.onf.ca/medias/nfb_tube_static/styles/imgs/ico_soustitre.gif&quot; alt=&quot;Disponible avec sous-titrage pour malentendants&quot; title=&quot;Disponible avec sous-titrage pour malentendants&quot; width=&quot;17&quot; height=&quot;20&quot;&gt;
+	    &lt;/div&gt;
+      &lt;/a&gt;
+      &lt;div class=&quot;infos&quot;&gt;
+        &lt;h3 class=&quot;title&quot;&gt;
+          &lt;a href=&quot;/film/diner_intime/chaptering/psJTAg/&quot; title=&quot;Catching a fly&quot;&gt;Catching a fly&lt;/a&gt;&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li class=&quot;running-time&quot;&gt;32 s&lt;/li&gt;
+            &lt;li class=&quot;film chapter-source&quot;&gt;&lt;span&gt;Film taken from:&lt;/span&gt;&lt;br&gt;D&Atilde;&reg;ner intime&lt;/li&gt;
+            &lt;li class=&quot;description&quot;&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class=&quot;extra-infos&quot;&gt;  
+            &lt;li class=&quot;&quot;&gt;&lt;a class=&quot;&quot; href=&quot;#&quot;&gt;&lt;em&gt;Modify this chapter&lt;/em&gt;&lt;/a&gt;
+        &lt;/li&gt;    
+        &lt;/ul&gt;
+      &lt;/div&gt; 
+&lt;/div&gt;
+</pre>
+</code>
+<br>
+<br>
+<div class="clearfix">
+<div class="thumbnail">
+    <ul class="tools">
+        <li class="move"><a class="bouton bouton-bleu bouton-sm"><em>Move</em></a></li>
+        <li id="4581" type="chapter" class="delete delete-ffp right"><a class="bouton bouton-plain bouton-sm"><em>Delete</em></a></li>
+    </ul>    
+    <ul class="meta">
+        <li class="date">last modify : 8/3/2003</li>
+    </ul>
+    <a href="/film/diner_intime/chaptering/psJTAg/" class="visual">
+      <img alt="Pour la suite du monde" src="http://www.nfb.ca/medias/nfb_tube/thumbs_small/2013/Pour-la-suite-du-monde_681_SM.jpg"> <span class="play-overlay">&nbsp;</span>
+	    <div class="format-icons">     
+	        <img src="http://media3.onf.ca/medias/nfb_tube_static/styles/imgs/ico_soustitre.gif" alt="Disponible avec sous-titrage pour malentendants" title="Disponible avec sous-titrage pour malentendants" width="17" height="20">
+	    </div>
+    </a>
+	<div class="infos">
+	<h3 class="title chapter-title">
+	  <a href="http://www.onf.ca/film/pour_la_suite_du_monde" title="Pour la suite du monde">Pour la suite du monde</a>
+	</h3>
+	<ul>
+		<li class="creator">by
+			<a href="/explorer-tous-les-cineastes/michel-brault/" title="plus de films par  Michel Brault">Michel Brault</a> et <a href="/explorer-tous-les-cineastes/pierre-perrault/" title="plus de films par  Pierre Perrault">Pierre Perrault</a>
+		</li>
+		<li class="prod-year">2005, </li>
+		<li class="running-time">11 min 24 s</li>
+		<li class="description">Documentaire poétique et ethnographique sur la vie des habitants de l'Isle-aux-Coudres rendue d'abord par une langue, verte et dure, toujours éloquente, puis par la légendaire pêche au marsouin, travail en mer gouverné par la lune et les marées. Un véritable chef-d'oeuvre du cinéma direct. 
+		</li> 
+	</ul>          
+		<ul class="extra-infos">  
+		    <li class="">
+		    	<a class=" " href="#"><em>edit</em></a>
+			</li>    
+		</ul>
+	</div> 
+</div>
+
+</div>
+
+
+<h3>Horizontal thumbnail</h3>
+
+<code class="snipet">
+<pre>
+&lt;div class=&quot;thumbnail stack-thumb&quot;&gt;
+	[...]
+&lt;/div&gt;
+</pre>
+</code>
+
+<br>
+<br>
+
+<div class="thumbnail stack-thumb">
+    <ul class="tools">
+        <li class="move"><a class="bouton bouton-bleu bouton-sm"><em>Move</em></a></li>
+        <li id="4581" type="chapter" class="delete delete-ffp right"><a class="bouton bouton-rouge bouton-sm"><em>Delete</em></a></li>
+    </ul>
+    <a href="/film/diner_intime/chaptering/psJTAg/" class="visual">
+      <img src="http://media3.onf.ca/medias/nfb_tube/thumbs_small/2012/Dinner_for_Two_SM.jpg" alt=""> <span class="play-overlay">&nbsp;</span></a>
+
+     
+      <div class="infos">
+        <h3 class="title chapter-title">
+          <a href="/film/diner_intime/chaptering/psJTAg/" title="Catching a fly">Catching a fly</a></h3>
+        <ul>
+            <li class="running-time">32 s</li>
+            <li class="film chapter-source"><span>Film taken from:</span><br>Dîner intime</li>
+            <li class="description"></li>
+        <li class="">
+          <a class="act-edit act-edit-pl-chapter" href="/film/diner_intime/chaptering/psJTAg">             
+             <em>Modify this chapter</em></a>
+        </li>
+        </ul>
+        <ul class="extra-infos">      
+        </ul>
+      </div> 
+</div>
+
+<h3>Poster thumbnail</h3>
+<p>Thumbnail can take diffrent image size, so nothing specific about a poster thumbnail</p>
+<br>
+<div class="clearfix">
+<div class="thumbnail">
+	<div class="meta">Added on 2012-12-13</div>
+    <div class="visual">
+      <img alt="Pour la suite du monde" src="http://media1.nfb.ca/medias/nfb_tube/jackets/rose_violet_bande_annonce.jpg"> <span class="thumb-overlay download-overlay">&nbsp;</span>
+	    <div class="format-icons">     
+	        <img src="http://media3.onf.ca/medias/nfb_tube_static/styles/imgs/ico_soustitre.gif" alt="Disponible avec sous-titrage pour malentendants" title="Disponible avec sous-titrage pour malentendants" width="17" height="20">
+	    </div>
+    </div>
+	<div class="infos">
+		<h3 class="title">Rose &amp; Violet</h3>	
+		<ul>
+			<li class="downloads">Available formats
+				<ul class="produits">
+				    <li>
+				        <a class="bouton" href="/member/download/get/7bdae4db8513512eb5e4962b5ee84131143e6754">HD ( 720p )</a>
+				    </li>
+				    <li>
+				        <a class="bouton" href="/member/download/get/4f5af796312c88884b19195773566a42b14a17f5">Standard ( 480p )</a>
+				    </li>
+				    <li>
+				        <a class="bouton" href="/member/download/get/5a7f335ae353bba0b11ac3c825c3785a393d1750">Mobile ( 360p )</a>
+				    </li>					
+				</ul>
+			</li>
+			<li class="licence">LICENCE: HOME USE</li>
+	    </ul>
+	</div>
+</div>
+
+{% endblock %}

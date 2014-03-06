@@ -1,0 +1,48 @@
+{% block styles %}        
+	{{ "board-ui-branding.css" | asset_url | stylesheet_tag }}
+{% endblock %}
+{% block content %} 
+
+<h1>NFB sub-brands</h1>
+<p class="files">style sheet : <a href="assets/css/board-ui-branding.css">board-ui-branding.css</a> </p>
+
+<code class="snipet">
+<pre>
+&lt;span class=&quot;sub-brand brand-education&quot;&gt;&lt;a href=&quot;#&quot;&gt;NFB/&lt;b class=&quot;sub&quot;&gt;education&lt;/b&gt;&lt;/a&gt;&lt;/span&gt;
+</pre>
+</code>
+
+<p>
+	<span class="sub-brand"><a href="#">NFB/<b class="sub">something</b></a></span> <code class="chip">sub-brand</code>
+<br>
+<br>
+<span class="sub-brand brand-distribution"><a href="http://blog.nfb.ca/">NFB/<b class="sub">distribution</b></a></span> <code class="chip">sub-brand brand-distribution</code>
+<br>
+<br>
+<span class="sub-brand brand-images"><a href="http://blog.nfb.ca/">NFB/<b class="sub">images</b></a></span> <code class="chip">sub-brand brand-images</code>
+<br>
+<br>
+<span class="sub-brand brand-education"><a href="http://blog.nfb.ca/">NFB/<b class="sub">education</b></a></span> <code class="chip">sub-brand brand-education</code>
+
+</p>
+<h3>Inverted</h3>
+
+<span class="sub-brand inv-brand-distribution"><a href="http://blog.nfb.ca/">NFB/<b class="sub">distribution</b></a></span> <code class="chip">sub-brand inv-brand-distribution</code>
+<br>
+<br>
+<span class="sub-brand inv-brand-images"><a href="http://blog.nfb.ca/">NFB/<b class="sub">images</b></a></span> <code class="chip">sub-brand inv-brand-images</code>
+<br>
+<br>
+<span class="sub-brand inv-brand-education"><a href="http://blog.nfb.ca/">NFB/<b class="sub">education</b></a></span> <code class="chip">sub-brand inv-brand-education</code>
+<h3>Campus</h3>
+<p><span class="brand-campus">Campus</span> <code class="chip">.brand-campus</code></p>
+
+
+<ul>
+
+<li>	Font :	Museo Sans</li>
+<li>	Color : #00ccff	</li>
+
+</ul>
+
+{% endblock %}

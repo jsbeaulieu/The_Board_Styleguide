@@ -1,0 +1,94 @@
+/* ( o ) ---------- */
+/*  | |  CSS Styles */
+/*----------------- */
+/* simple responsive grid for nfb.ca - 09-2013 */
+
+.row, .row * { box-sizing: border-box; }
+
+.row:before, 
+.row:after { content:""; display:table; }
+.row:after { clear:both; }
+
+.row {
+  width: 100%;
+/*  max-width: 1000px; */
+  margin: 0 auto;
+}
+
+[class*="span"] {
+  display: block;
+  float: left;
+  padding: 0 10px;
+}
+
+ .row > [class*="span"]:first-child{ padding-left: 0; }
+
+[class*="span"] img {
+  width: 100%;
+  height: auto;
+}
+
+[class*="span"] img.native{width:auto;}
+
+/* MOBILE FIRST */
+
+  [class*="-xsc"] { width: 100%; }
+  [class*="-xsb"] { width: 91.66666666666666%; }
+  [class*="-xsa"] { width: 83.33333333333334%; }
+  [class*="-xs9"] { width: 75%; }
+  [class*="-xs8"] { width: 66.66666666666666%; }
+  [class*="-xs7"] { width: 58.333333333333336%; }
+  [class*="-xs6"] { width: 50%; }
+  [class*="-xs5"] { width: 41.66666666666667%; }
+  [class*="-xs4"] { width: 33.33333333333333%; }
+  [class*="-xs3"] { width: 25%; }
+  [class*="-xs2"] { width: 16.666666666666664%; }
+  [class*="-xs1"] { width: 8.333333333333332%;}
+
+/* TABLETTE */
+@media (min-width: 44em){
+  [class*="-sc"] { width: 100%; }
+  [class*="-sb"] { width: 91.66666666666666%; }
+  [class*="-sa"] { width: 83.33333333333334%; }
+  [class*="-s9"] { width: 75%; }
+  [class*="-s8"] { width: 66.66666666666666%; }
+  [class*="-s7"] { width: 58.333333333333336%; }
+  [class*="-s6"] { width: 50%; }
+  [class*="-s5"] { width: 41.66666666666667%; }
+  [class*="-s4"] { width: 33.33333333333333%; }
+  [class*="-s3"] { width: 25%; }
+  [class*="-s2"] { width: 16.666666666666664%; }
+  [class*="-s1"] { width: 8.333333333333332%;}
+}
+
+/*ORDI*/
+@media (min-width: 68.75em) {
+  [class*="-mc"] { width: 100%; }
+  [class*="-mb"] { width: 91.66666666666666%; }
+  [class*="-ma"] { width: 83.33333333333334%; }
+  [class*="-m9"] { width: 75%; }
+  [class*="-m8"] { width: 66.66666666666666%; }
+  [class*="-m7"] { width: 58.333333333333336%; }
+  [class*="-m6"] { width: 50%; }
+  [class*="-m5"] { width: 41.66666666666667%; }
+  [class*="-m4"] { width: 33.33333333333333%; }
+  [class*="-m3"] { width: 25%; }
+  [class*="-m2"] { width: 16.666666666666664%; }
+  [class*="-m1"] { width: 8.333333333333332%;}
+}
+
+/*TV*/
+@media (min-width: 109.75em) {
+  [class*="-lc"] { width: 100%; }
+  [class*="-lb"] { width: 91.66666666666666%; }
+  [class*="-la"] { width: 83.33333333333334%; }
+  [class*="-l9"] { width: 75%; }
+  [class*="-l8"] { width: 66.66666666666666%; }
+  [class*="-l7"] { width: 58.333333333333336%; }
+  [class*="-l6"] { width: 50%; }
+  [class*="-l5"] { width: 41.66666666666667%; }
+  [class*="-l4"] { width: 33.33333333333333%; }
+  [class*="-l3"] { width: 25%; }
+  [class*="-l2"] { width: 16.666666666666664%; }
+  [class*="-l1"] { width: 8.333333333333332%;}
+}

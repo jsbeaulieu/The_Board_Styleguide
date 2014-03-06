@@ -1,0 +1,100 @@
+/* ( o ) ---------- */
+/*  | |  CSS Styles */
+/*----------------- */
+
+/*basic the board styles*/
+
+html, body{height: 100%;}
+body{color:#fff;background: #242424}
+
+.board-header{background-color: #242424;}
+.board-body{background-color: #000;}
+.board-footer{background-color: #242424;}
+
+.thepage{padding-bottom: 80px }
+.thepage{*zoom:1;}.thepage:before,.thepage:after{display:table;content:"";}
+.thepage:after{clear:both;}
+
+/*a{color:#7CB67B}*/
+    a{color:#e0881b}
+    a:hover{color:#9efd9d}
+a{color:#fc6}
+a:hover{color:#f90}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+p,
+pre {
+    padding: 1em 0;
+}
+
+h1 {
+    font-size:2.61538em; padding:0.478em 0;
+}
+
+h2, h3 { font-size:1.61538em; padding:0.775em 0; }
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+    font-weight: bold;
+}
+/*
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.75em;
+    margin: 2.33em 0;
+}
+*/
+h1 + p, h2 + p, h3 + p, h4 + p{padding-top: 0}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+.copy em, .copy i{font-style: italic;}
+.copy dl,
+.copy menu,
+.copy ol,
+.copy ul {
+    margin: 1em 0;
+}
+
+.copy dd {
+    margin: 0 0 0 40px;
+}
+ .copy ol {list-style: decimal;}
+ .copy ul {list-style: decimal;}
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+
+.copy menu,
+.copy ol,
+.copy ul {
+    padding: 0 0 0 40px;
+}
+
+/* TABLETTE */
+@media (min-width: 704px){
+    h1 { padding:1.2868em 0;}
+    h2, h3 {  padding:1.30958em 0; }
+}
+
+/*ORDI*/
+@media (min-width: 1100px){
+/*body{ font-size: 90% }*/
+}
+
+/*TV*/
+@media (min-width: 1756px){
+    body{ font-size: 120% }
+}

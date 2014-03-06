@@ -1,0 +1,75 @@
+{% block styles %}        
+	{{ "board-style.css" | asset_url | stylesheet_tag }}
+	{{ "board-ui-grid.css" | asset_url | stylesheet_tag }}
+{% endblock %}
+{% block content %} 
+
+<h1>Grid <sup>beta</sup></h1>
+<p>style sheet : board-ui-grid.css </p>
+
+
+
+<code class="snipet">
+<pre>
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;span-lX-mX-sX-xsX&quot;&gt;
+		 [...] 
+	&lt;/div&gt;
+	&lt;div class=&quot;span-lY-mY-sY-xsY&quot;&gt;
+		 [...] 
+	&lt;/div&gt;	
+&lt;/div&gt;
+</pre>
+</code>
+
+
+<p>12 colums grid.</p>
+<table class="sg-table">
+<tr>
+<th>prefix</th>
+<th>@ size</th>
+<th>description</th>
+</tr>
+<tr>
+	<td><code> -l </code></td>
+	<td>[ 1756px ]</td>
+	<td>for large screens. HD monitors, TVs </td>
+</tr>
+<tr>
+	<td><code> -m </code></td>
+	<td>[ 1100px ]</td>
+	<td>for medium screens. Desktop computers, laptops   </td>
+</tr>
+
+<tr>
+	<td><code> -s </code></td>
+	<td>[ 704px ]</td>
+	<td>for small screens. Tablets </td>
+</tr>
+<tr>
+	<td><code> -xs </code></td>
+	<td>[ 512px ]</td>
+	<td>for extra-small screens. Phones </td>
+</tr>
+
+
+
+</table>
+
+
+<div class="copy demo">
+	<h1>H1 header</h1>
+
+<!-- TODO:  Italic sur les blocks .copy-->
+<div class="row">
+	<div class="span-l3-m4-s6-xsc"><p>(( span-l3-m4-s6-xsc )) Paragraphe lorem ipsum <a href="#">un lien</a>  dolor sit amet, <em class="_bad">italique avec em</em>  elit. <strong>Bold avec strong</strong> ultrices <i class="_bad">italique avec i</i> hendrerit lacus a pretium. Vivamus <b>Bold avec b</b> sit amet odio ipsum. Duis at lectus elit, sagittis sodales sem. Aenean convallis euismod bibendum. Etiam a nisi tincidunt lacus commodo aliquam in eu mauris. Integer semper, dolor non mattis ornare, dui tortor pulvinar purus, id scelerisque nunc sem hendrerit leo. Aenean vel fringilla velit. Phasellus a ligula nec odio varius volutpat.</p></div>
+	<div class="span-l3-m4-s6-xsc"><p>(( span-l3-m4-s6-xsc )) Paragraphe lorem ipsum <a href="#">un lien</a>  dolor sit amet, <em class="_bad">italique avec em</em>  elit. <strong>Bold avec strong</strong> ultrices <i class="_bad">italique avec i</i> hendrerit lacus a pretium. Vivamus <b>Bold avec b</b> sit amet odio ipsum. Duis at lectus elit, sagittis sodales sem. Aenean convallis euismod bibendum. Etiam a nisi tincidunt lacus commodo aliquam in eu mauris. Integer semper, dolor non mattis ornare, dui tortor pulvinar purus, id scelerisque nunc sem hendrerit leo. Aenean vel fringilla velit. Phasellus a ligula nec odio varius volutpat.</p></div>
+	<div class="span-l3-m4-s6-xsc"><p>(( span-l3-m4-s6-xsc )) Paragraphe lorem ipsum <a href="#">un lien</a>  dolor sit amet, <em class="_bad">italique avec em</em>  elit. <strong>Bold avec strong</strong> ultrices <i class="_bad">italique avec i</i> hendrerit lacus a pretium. Vivamus <b>Bold avec b</b> sit amet odio ipsum. Duis at lectus elit, sagittis sodales sem. Aenean convallis euismod bibendum. Etiam a nisi tincidunt lacus commodo aliquam in eu mauris. Integer semper, dolor non mattis ornare, dui tortor pulvinar purus, id scelerisque nunc sem hendrerit leo. Aenean vel fringilla velit. Phasellus a ligula nec odio varius volutpat.</p></div>
+	<div class="span-l3-mc-s6-xsc"><p>(( span-l3-mc-s6-xsc )) Paragraphe lorem ipsum <a href="#">un lien</a>  dolor sit amet, <em class="_bad">italique avec em</em>  elit. <strong>Bold avec strong</strong> ultrices <i class="_bad">italique avec i</i> hendrerit lacus a pretium. Vivamus <b>Bold avec b</b> sit amet odio ipsum. Duis at lectus elit, sagittis sodales sem. Aenean convallis euismod bibendum. Etiam a nisi tincidunt lacus commodo aliquam in eu mauris. Integer semper, dolor non mattis ornare, dui tortor pulvinar purus, id scelerisque nunc sem hendrerit leo. Aenean vel fringilla velit. Phasellus a ligula nec odio varius volutpat.</p></div>
+</div>
+
+	<p>Paragraphe lorem ipsum <a href="#">un lien</a>  dolor sit amet, <em class="_bad">italique avec em</em>  elit. <strong>Bold avec strong</strong> ultrices <i class="_bad">italique avec i</i> hendrerit lacus a pretium. Vivamus <b>Bold avec b</b> sit amet odio ipsum. Duis at lectus elit, sagittis sodales sem. Aenean convallis euismod bibendum. Etiam a nisi tincidunt lacus commodo aliquam in eu mauris. Integer semper, dolor non mattis ornare, dui tortor pulvinar purus, id scelerisque nunc sem hendrerit leo. Aenean vel fringilla velit. Phasellus a ligula nec odio varius volutpat.</p>
+
+
+</div>
+{% endblock %}

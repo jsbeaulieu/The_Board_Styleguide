@@ -1,0 +1,45 @@
+/* ( o ) ---------- */
+/*  | |  CSS Styles */
+/*----------------- */
+
+.share-option {margin:20px 0;padding:20px;background: #414141}
+.share-option h3{font-size:0.8em;line-height:1;font-weight:600;text-transform:uppercase;color:#fff;padding: 0 0 ;margin-bottom: 1em}
+.share-option {font-size:1.4em;}
+.share-option input, .share-option textarea{padding:8px 6px;border: none;}
+.share-option input{font-size:120%;text-align:center}
+.share-option textarea{height:11em;font-size: 60%;width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+/*.share-option .film-link{width: 50%}*/
+.share-option .bouton{vertical-align: baseline;}
+.share-option .reset{font-size:14px}
+
+
+/*.share-options .film-link{display:block;width:auto}*/
+.share-options .bouton{display:block;text-align: center}
+.share-option, .share-options p {text-align: left}
+/*.share-option h3{float:none;font-size:18px;line-height:18px;margin-bottom:1em}*/
+
+
+@media (min-width: 481px) and (max-width: 1023px) {
+/*.share-options {width:460px;}*/
+.share-option, .share-options p {text-align: left}
+/*.share-option h3{float:none;font-size:18px;line-height:18px;margin-bottom:1em}*/
+}
+
+@media (min-width: 1024px){
+    .social-bin h3{}
+}
+
+
+
+/* TABLETTE */
+@media (min-width: 704px){
+
+}
+
+/*ORDI*/
+@media (min-width: 1100px){
+    .share-option textarea{height:8em;}
+}
+
+/*TV*/
+@media (min-width: 1756px){}

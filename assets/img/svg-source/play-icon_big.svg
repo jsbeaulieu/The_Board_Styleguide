@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px" width="100px" height="100px" xml:space="preserve">
+<circle cx="50" cy="50" r="50"/>
+<circle fill="#FFFFFF" cx="50" cy="50" r="44"/>
+<circle cx="50" cy="50" r="40"/>
+<polygon points="17,16.5,17.019,33.5,37,25.065" fill="#FFF" transform="matrix(2,0,0,2,0,0)"/>
+</svg>
