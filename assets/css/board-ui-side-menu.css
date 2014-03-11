@@ -2,6 +2,8 @@
 /*  | |  CSS Styles */
 /*----------------- */
 
+/* TODO: turn .sidemenu into .menu */
+
 /* MOBILE FIRST */
 .sidemenu, .topmenu{border-bottom: 1px solid #333 ;margin-bottom:20px}
 .sidemenu > li, .topmenu > li, .crumbs{border-top: 1px solid #333;padding:1em 0;text-transform: uppercase;line-height: 1.375em }
@@ -11,16 +13,18 @@
 .sidemenu li li:before{content: "> ";color:#999}
 .sidemenu a, .topmenu a {color:#ccc}
 .sidemenu a:hover, .topmenu a:hover {text-decoration: underline;color:#fff}
-.sidemenu .on > a {font-weight: bold}
+.sidemenu .on > a, .topmenu .on > a {font-weight: bold}
 .sidemenu .open,.topmenu .open{}
 .xtern a:after{content:" ";display: inline-block; height:1.1em;width:1.5em;vertical-align: baseline; background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+IAogICAgPHBhdGgKICAgICAgIGQ9Ik0gOCw0IDEsNCAxLDE1IDEyLDE1IDEyLDggIiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojY2NjO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lIiAvPgogICAgPHBhdGgKICAgICAgIGQ9Ik0gNiwxMCAxNSwxIiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojY2NjO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtZGFzaGFycmF5Om5vbmUiIC8+CiAgICA8cGF0aAogICAgICAgZD0iTSA4LDEgMTUsMSAxNSw5IiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojY2NjO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lIiAvPgogIDwvc3ZnPg==") right 100% no-repeat}
 
 .topmenu li{display: inline-block;border-top: none;margin-right: 1em}
-
+.tabs li{margin-right:0;padding: 1em}
 /*.sidemenu .on a, .sidemenu .open > a{color: #fff}*/
 .sidemenu li li.on:before{color:#fff}
 .crumbs {text-transform: none; border-top: none;padding-bottom: 0}
 .crumbs a:first-child{text-transform: uppercase;}
+
+.tabs > li.on {border:1px solid #333;border-bottom: 0px; background-color: #333}
 
 /* TABLETTE */
 @media (min-width: 44em){}

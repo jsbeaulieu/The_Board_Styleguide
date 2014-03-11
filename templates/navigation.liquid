@@ -1,6 +1,6 @@
 {% block styles %}        
     {{ "board-ui-side-menu.css" | asset_url | stylesheet_tag }}
-	{{ "board-ui-pager.css" | asset_url | stylesheet_tag }}
+    {{ "board-ui-pager.css" | asset_url | stylesheet_tag }}
 {% endblock %}
 
 {% block content %} 
@@ -74,6 +74,24 @@
 <br>
 <div class="demo">
 <ul class="topmenu">
+    <li><a href="#">Item 1</a></li>
+    <li class="on"><a href="#">Item 2</a></li>
+    <li><a href="#">Item 3</a></li>
+    <li class=""><a href="#">Item 4</a></li>
+    <li><a href="#">Item 6</a></li>
+</ul>
+</div>
+ <h4>Tabs</h4>
+ <code class="snipet">
+<pre>
+&lt;ul class=&quot;topmenu tabs&quot;&gt;
+    [...]
+&lt;/ul&gt;
+</pre>
+</code>
+<br>
+<div class="demo">
+<ul class="topmenu tabs">
     <li><a href="#">Item 1</a></li>
     <li class="on"><a href="#">Item 2</a></li>
     <li><a href="#">Item 3</a></li>
