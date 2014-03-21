@@ -19,12 +19,14 @@
 
 .topmenu li{display: inline-block;border-top: none;margin-right: 1em}
 .tabs li{margin-right:0;padding: 1em}
+.tabs-v2 li{border-top: 4px double #333;padding-top:0.75em;}
 /*.sidemenu .on a, .sidemenu .open > a{color: #fff}*/
 .sidemenu li li.on:before{color:#fff}
 .crumbs {text-transform: none; border-top: none;padding-bottom: 0}
 .crumbs a:first-child{text-transform: uppercase;}
 
-.tabs > li.on {border:1px solid #333;border-bottom: 0px; background-color: #333}
+.tabs > li.on {border-top:1px solid #333;border-bottom: 0px; background-color: #333}
+.tabs-v2 > li.on {border-top:4px solid #fff;}
 
 /* TABLETTE */
 @media (min-width: 44em){}
