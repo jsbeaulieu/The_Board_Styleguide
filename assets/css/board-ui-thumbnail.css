@@ -80,15 +80,14 @@
     .stack-thumb  .produits li {display: inline-block;}
     .stack-thumb  .produits li.trailer {display: block;}
 
-.sm-thumb {margin-bottom: 0;padding-bottom: 0}
+.sm-thumb {margin-bottom: 1em;padding-bottom: 0}
 .sm-thumb .infos > ul {margin:0 0}
 .sm-thumb .visual{width:20%;}
 .sm-thumb .infos{width:70%;}
-.sm-thumb .meta{position: absolute;right:0;top:0;line-height: 30px}
-.cat{color:#ddf;background-color: #07f;padding: 2px 6px;font-size: 1.4em;border-radius: 5px}
+.sm-thumb .produits li {margin-bottom: 0}
+.sm-thumb .cat{position: absolute;right:0;top:0;line-height: 30px}
+.cat .film{color:#ddf;background-color: #07f;padding: 2px 6px;font-size: 1.4em;border-radius: 5px}
 }
-
-
 
 /*ORDI*/
 @media (min-width: 1100px){}
