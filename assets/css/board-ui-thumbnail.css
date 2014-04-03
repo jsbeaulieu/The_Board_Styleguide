@@ -14,7 +14,8 @@
 .thumbnail .visual img{width:100%}
 
 .thumbnail .format-icons {position: absolute;right: 3px;margin-top:-26px;}
-.sm-thumb .format-icons {margin-top:-18px;}
+.thumbnail .format-icons img {width: auto;}
+/*.sm-thumb .format-icons {margin-top:-18px;}*/
 
 .thumbnail .title {font-size:1.3077em;padding:0.6154em 0 0; font-family:"franklin-gothic-urw", Arial, sans-serif;}
 .thumbnail .infos > ul {margin:1.25em 0}
@@ -84,7 +85,7 @@
 .sm-thumb .infos > ul {margin:0 0}
 .sm-thumb .visual{width:20%;}
 .sm-thumb .infos{width:70%;}
-.sm-thumb .produits li {margin-bottom: 0}
+.sm-thumb .produits li {margin-bottom: 0;font-size: 0.8em;margin-right: 16px}
 .sm-thumb .cat{position: absolute;right:0;top:0;line-height: 30px}
 .cat .film{color:#ddf;background-color: #07f;padding: 2px 6px;font-size: 1.4em;border-radius: 5px}
 }
