@@ -48,17 +48,21 @@
 
 
 /*search categories*/
-.cat [class*="type-"]{background-color: #07f ;color:#fff;padding: 2px 6px;font-size: 1.4em;}
-.cat .type-film:before{
+.cat [class*="type-"]{position:relative;background-color: #333 ;color:#ccc;padding: 2px 6px 2px 4px;font-size: 1.2em;}
+.cat [class*="type-"]:before{
     content: " ";
-    float: left;
+    position:absolute;
+    top:0;
+    right:100%;
     width:0;
     height: 0;
-    border-color: transparent #07f transparent transparent;
+    border-color: transparent;
     border-style: solid;
     border-width: 10px 10px 10px 0
 }
-.cat .type-film {}
+
+.cat .type-film {background-color: #333 ;}
+.cat .type-film:before {border-right-color: #333 ;}
 
 
 /*states*/
