@@ -1,3 +1,6 @@
+{% block styles %}
+{{ "board-ui-loader.css" | asset_url | stylesheet_tag }}
+{% endblock %}
 {% block content %} 
 
 <h1>Images, logos & icone</h1>
@@ -49,6 +52,16 @@
 		<figure class="native-size"><img src="{{ "ico-cc-en.svg" | asset_url }}"><figcaption>close caption icon (en) <acronym>(svg)</acronym></figcaption></figure>
 		<figure class="native-size"><img src="{{ "ico-cc-fr.svg" | asset_url }}"><figcaption>sous-titre icon (fr) <acronym>(svg)</acronym></figcaption></figure>		
 		<figure class="native-size"><img src="{{ "ico-sous-titre-fr.svg" | asset_url }}"><figcaption>sous-titre icon (int) <acronym>(svg)</acronym></figcaption></figure>
+	</li>
+</ul>
+
+<h4>Loader</h4>
+<ul>
+	<li>
+		<figure class="native-size">
+			<img src="{{ "bobine-loader.svg" | asset_url }}" alt="">
+			<figcaption>Loader <acronym>(svg)</acronym></figcaption>
+		</figure>
 	</li>
 </ul>
 

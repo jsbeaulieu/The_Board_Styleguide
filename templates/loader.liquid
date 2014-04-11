@@ -1,0 +1,45 @@
+{% block styles %}
+{{ "board-ui-loader.css" | asset_url | stylesheet_tag }}
+{% endblock %}
+{% block content %} 
+<h2>Loader</h2>
+
+
+<code class="snipet">
+<pre>
+&lt;i class=&quot;loader loader-spin&quot;&gt; &lt;/i&gt;
+</pre>
+</code>
+<br>
+<div class="clearfix">
+<div>
+	<i class="loader loader-spin"> </i>
+</div>
+
+<table class="sg-table">
+<tr>
+<th>icone</th>
+<th>class</th>
+<th>description</th>
+</tr>
+
+<tr>
+<td><i class="loader loader-spin"></i></td>
+<td><code>loader loader-spin</code></td>
+<td> par default ( 50px x 50px ) </td>
+</tr>
+
+<tr>
+<td><i class="loader loader-spin loader-sm"></i></td>
+<td><code>loader loader-spin loader-sm</code></td>
+<td> Petit loader ( 25px x 25px ) </td>
+</tr>
+
+<tr>
+<td><i class="loader loader-spin loader-lg"> </i></td>
+<td><code>loader loader-spin loader-lg</code></td>
+<td> Petit loader ( 100px x 100px ) </td>
+</tr>
+</table>
+
+{% endblock %}
