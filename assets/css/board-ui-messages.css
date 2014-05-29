@@ -1,27 +1,46 @@
 /* ( o ) ---------- */
 /*  | |  The BOARD  */
 /*----------------- */
-
+ 
 .alert, .panel{color:#000;padding:1em;margin:1em 0;position: relative;text-align: center;border-radius: 2px;
-	background-color: lightgrey;border:1px solid grey;
+    background-color: lightgrey;border:1px solid grey;
 }
 .alert{font-weight: bold;}
-.alert p,.panel p{padding:1em 0 0;}
+.alert p,.panel p{padding:1em 0 0;line-height: 1.5}
 .alert p:first-child,.panel p:first-child{padding:0;}
-
+ 
 .panel{text-align: left}
 .panel .panel-title{font-size: 1.6154em;padding: 0 0 0.8em 0;}
 .panel-body{background-color: #fff;background-color: rgba(255,255,255,.5);padding: 1em;color:#333;}
-
+ 
+.success {background-color: #a6c96d;border-color: #619e37; color:#343;}
+.info {background-color: #6fafd6; border-color: #2b8ac4;color: #fff}
+.help{background-color: #f2e1ac;border-color: #F0CF78;color: #665}
+.warning {background-color: #f7b045; border-color: #F79345; color:#533625;}
+.danger, .error {background-color: #F24B5F;border-color: #E03146; color:#491616;}
+    .alert.success a:not(.bouton){color:#109b31;}
+    .alert.info a:not(.bouton) {color: #136597}
+    .alert.help a:not(.bouton){color: #af8d32}
+    .alert.warning a:not(.bouton){ color:#bb4c0b;}
+    .alert.danger a:not(.bouton), .alert.error a:not(.bouton){color:#7A1A1A;}
+    .alert a:not(.bouton){text-decoration: underline;}
+ 
+.success a.bouton-clear { color:#343;}
+.info a.bouton-clear {color: #fff}
+.help a.bouton-clear{color: #665}
+.warning a.bouton-clear {color:#533625;}
+.danger a.bouton-clear {color:#491616;}
+    a.bouton-clear{text-decoration: underline;}
+ 
 a.bouton-kill-window{
     background-color: #777;
-	background-color: rgba(120,120,120,0.6);
+    background-color: rgba(120,120,120,0.6);
     color: #ffffff;
     display:inline-block;*display:inline;*zoom:1;
     vertical-align:text-top;
     font-style: normal;
     font-weight: 600;
-	padding: 3px 6px;
+    padding: 3px 6px;
     text-align: center;
     border: 1px solid transparent;
     margin: auto;
@@ -34,12 +53,6 @@ a.bouton-kill-window{
     transition: all 0.2s ease;
    /* text-shadow:0 1px 1px rgba(55, 55, 55, 0.75)*/
 }
-
-.bouton-kill-window:hover{color:#fff;background-color: #f2594b }
+ 
+a.bouton-kill-window:hover{color:#fff;background-color: #f2594b }
 .alert .bouton-kill-window,.panel .bouton-kill-window {position: absolute;right:20px;top:-1px;}
-
-.success {background-color: #a6c96d;border-color: #619e37; color:#343;}
-.info {background-color: #6fafd6; border-color: #2b8ac4;color: #fff}
-.help{background-color: #f2e1ac;border-color: #F0CF78;color: #665}
-.warning {background-color: #f7b045; border-color: #F79345; color:#533625;}
-.danger {background-color: #F24B5F;border-color: #E03146; color:#491616;}
